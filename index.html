@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alejandro Jugo Instalaciones</title>
+  <meta name="description" content="Instalaciones sanitarias, gas natural, incendio y conexiones a red de agua y cloaca para edificios, viviendas y reformas. Agendá una reunión con Alejandro Jugo.">
+  <meta name="theme-color" content="#F5F3EF">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alejandro Jugo Instalaciones">
+  <meta property="og:description" content="Sanitarias, gas, incendio y conexiones a red. 16 años en obra. Agendá una reunión.">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:url" content="https://alejandrojugocoder.github.io/alejandro-jugo-instalaciones/">
+  <meta property="og:image" content="https://alejandrojugocoder.github.io/alejandro-jugo-instalaciones/assets/logo-alejandro-jugo.png">
+  <link rel="canonical" href="https://alejandrojugocoder.github.io/alejandro-jugo-instalaciones/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#agendar">Ir a agendar reunión</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand">
+        <img class="brand-logo" src="assets/logo-alejandro-jugo.png" width="866" height="238" alt="Alejandro Jugo Instalaciones">
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#clientes" class="nav-link">Con quién trabajo</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#proceso" class="nav-link">Cómo trabajo</a>
+        <a href="#agendar" class="btn btn-primary btn-small">Agendar reunión</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Sanitarias · Gas · Incendio · Conexiones a red</p>
+          <h1>Instalaciones que no se vuelven a tocar.</h1>
+          <p class="lead">Soy Alejandro Jugo, técnico con 16 años en obra. Trabajo con arquitectos, constructoras y empresarios en edificios, viviendas desde cero y reformas, con terminaciones de primera.</p>
+          <div class="hero-actions">
+            <a href="#agendar" class="btn btn-primary">Agendar una reunión <span class="arrow" aria-hidden="true">→</span></a>
+            <a href="#agendar" class="btn btn-ghost" data-whatsapp>Escribir por WhatsApp</a>
+          </div>
+          <dl class="facts">
+            <div><dt>16</dt><dd>años en obra</dd></div>
+            <div><dt>4</dt><dd>especialidades</dd></div>
+            <div><dt>1:1</dt><dd>trato directo</dd></div>
+          </dl>
+        </div>
+
+        <figure class="hero-visual" aria-hidden="true">
+          <svg class="schematic" viewBox="0 0 440 500">
+            <defs>
+              <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="10" cy="10" r="1" class="dot"/>
+              </pattern>
+            </defs>
+            <rect width="440" height="500" fill="url(#dots)"/>
+
+            <text x="20" y="34" class="sch-label sch-strong">PL-01</text>
+            <text x="420" y="34" class="sch-label" text-anchor="end">ESQUEMA DE INSTALACIONES</text>
+
+            <!-- Incendio -->
+            <text x="420" y="70" class="sch-label" text-anchor="end">IN — incendio</text>
+            <path class="pipe pipe-in pipe-draw" pathLength="1" d="M380 250 V84 M340 84 H420"/>
+            <circle cx="340" cy="84" r="4.5" class="node-accent"/>
+            <circle cx="420" cy="84" r="4.5" class="node-accent"/>
+            <circle cx="380" cy="250" r="6" class="node"/>
+
+            <!-- Agua fría -->
+            <text x="20" y="100" class="sch-label">AF — agua fría</text>
+            <path class="pipe pipe-af pipe-draw" pathLength="1" d="M20 110 H284 Q308 110 308 134 V262 Q308 286 332 286 H420"/>
+            <polygon class="valve" points="102,103 118,117 118,103 102,117"/>
+            <circle cx="420" cy="286" r="4" class="node-fill"/>
+
+            <!-- Agua caliente -->
+            <text x="20" y="156" class="sch-label">AC — agua caliente</text>
+            <path class="pipe pipe-ac pipe-draw" pathLength="1" d="M20 134 H260 Q284 134 284 158 V286 Q284 310 308 310 H420"/>
+            <polygon class="valve valve-accent" points="182,127 198,141 198,127 182,141"/>
+            <circle cx="420" cy="310" r="4" class="node-accent-fill"/>
+
+            <!-- Gas natural -->
+            <text x="20" y="190" class="sch-label">GN — gas natural</text>
+            <path class="pipe pipe-gn" d="M20 200 H156 Q180 200 180 224 V372 Q180 396 204 396 H420"/>
+            <polygon class="valve" points="72,193 88,207 88,193 72,207"/>
+            <circle cx="420" cy="396" r="4" class="node-fill"/>
+
+            <!-- Cloaca + cámara de inspección -->
+            <rect x="72" y="252" width="32" height="32" class="chamber"/>
+            <text x="88" y="272" class="sch-label sch-tiny" text-anchor="middle">CI</text>
+            <path class="pipe pipe-cl pipe-draw" pathLength="1" d="M88 284 V428 Q88 452 112 452 H420"/>
+            <text x="420" y="480" class="sch-label" text-anchor="end">CL — cloacal Ø110 → red</text>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ CON QUIÉN TRABAJO ============ -->
+    <section class="section" id="clientes">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">Clientes</p>
+            <h2>Con quién trabajo</h2>
+          </div>
+          <p>Cada perfil necesita algo distinto de su instalador. Esto es lo que me piden, y lo que entrego.</p>
+        </div>
+
+        <ul class="audience" data-reveal>
+          <li>
+            <span class="num">01</span>
+            <h3>Arquitectos y estudios</h3>
+            <p>Leo tus planos en AutoCAD o Revit y ejecuto el proyecto como lo pensaste, coordinado con el resto de los gremios.</p>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <h3>Empresarios y desarrolladores</h3>
+            <p>Plazos claros, un solo responsable y una instalación que no te genere reclamos después de entregar.</p>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <h3>Contratistas y jefes de obra</h3>
+            <p>Un gremio que cumple los tiempos de obra y no te obliga a volver a romper paredes.</p>
+          </li>
+          <li>
+            <span class="num">04</span>
+            <h3>Técnicos y colegas</h3>
+            <p>Trabajo en equipo: colaboración en obras grandes, consultas técnicas y derivaciones.</p>
+          </li>
+          <li>
+            <span class="num">05</span>
+            <h3>Particulares</h3>
+            <p>Confort en tu casa: buena presión de agua, gas seguro y terminaciones de primera.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">Servicios</p>
+            <h2>Qué hago</h2>
+          </div>
+          <p>Cuatro especialidades, un solo responsable. Obra nueva, viviendas desde cero y reformas.</p>
+        </div>
+
+        <div class="services" data-reveal>
+          <article class="service">
+            <div class="service-top">
+              <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c3 3.6 6 7 6 10.5a6 6 0 0 1-12 0c0-3.5 3-6.9 6-10.5z"/></svg></span>
+              <span class="num">01</span>
+            </div>
+            <div class="service-body">
+              <h3>Sanitarias</h3>
+              <p>Agua fría y caliente, desagües cloacales y pluviales. Del primer caño a la última grifería.</p>
+            </div>
+          </article>
+          <article class="service">
+            <div class="service-top">
+              <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.6 3.2 5 5.4 5 10a5 5 0 0 1-10 0c0-2.2 1.1-3.7 2.2-4.6.2 1.7 1 2.8 2.1 3.1C10.8 9 11.2 5.8 12 3z"/></svg></span>
+              <span class="num">02</span>
+            </div>
+            <div class="service-body">
+              <h3>Gas natural</h3>
+              <p>Instalaciones nuevas, ampliaciones y adecuaciones para viviendas y edificios. Seguridad primero.</p>
+            </div>
+          </article>
+          <article class="service">
+            <div class="service-top">
+              <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M7 7h10M9 7l-1 4h8l-1-4M12 11v2M8 16.5 6.5 19M12 16.5V20M16 16.5l1.5 2.5"/></svg></span>
+              <span class="num">03</span>
+            </div>
+            <div class="service-body">
+              <h3>Incendio</h3>
+              <p>Redes de incendio para edificios: cañerías, bocas de incendio y conexiones según proyecto.</p>
+            </div>
+          </article>
+          <article class="service">
+            <div class="service-top">
+              <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9.5h5.5M2.5 14.5h5.5M16 9.5h5.5M16 14.5h5.5M8 7.5h8v9H8z"/></svg></span>
+              <span class="num">04</span>
+            </div>
+            <div class="service-body">
+              <h3>Conexiones a red</h3>
+              <p>Conexión a la red de agua y cloaca: el tramo que une tu obra con la ciudad.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="worktypes" data-reveal>
+          <span class="worktypes-label">Tipos de obra</span>
+          <ul>
+            <li>Edificios en construcción</li>
+            <li>Viviendas desde cero</li>
+            <li>Reformas y renovaciones</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DIFERENCIAL ============ -->
+    <section class="statement">
+      <div class="container" data-reveal>
+        <blockquote>Reparar una cañería vieja sale más caro que hacer una nueva. <em>Elegir mal al instalador, también.</em></blockquote>
+        <p>Lo barato en instalaciones se paga dos veces: primero en la obra y después rompiendo paredes. Por eso no compito por precio. Trabajo para que no tengas que volver a llamar a nadie.</p>
+        <span class="signature">— Alejandro Jugo</span>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="section" id="proceso">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">Proceso</p>
+            <h2>Cómo trabajamos</h2>
+          </div>
+          <p>Simple y directo, de la primera charla a la prueba final.</p>
+        </div>
+
+        <ol class="steps" data-reveal>
+          <li class="step">
+            <span class="num">01 <span class="step-meta">30 min</span></span>
+            <h3>Reunión</h3>
+            <p>En obra, en tu oficina o por videollamada. Me contás el proyecto y vemos cómo encararlo.</p>
+          </li>
+          <li class="step">
+            <span class="num">02</span>
+            <h3>Relevamiento y propuesta</h3>
+            <p>Reviso planos o visito la obra y te paso una propuesta clara: alcance, plazos y honorarios.</p>
+          </li>
+          <li class="step">
+            <span class="num">03</span>
+            <h3>Ejecución y entrega</h3>
+            <p>Obra con seguimiento directo, pruebas de funcionamiento y entrega lista para usar.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ AGENDAR ============ -->
+    <section class="section section-booking" id="agendar">
+      <div class="container booking">
+        <div class="booking-info" data-reveal>
+          <p class="eyebrow">Agenda</p>
+          <h2>Agendá una reunión conmigo</h2>
+          <p class="booking-lead">Contame en qué estás trabajando y elegí cuándo te queda cómodo. Te confirmo el horario personalmente por WhatsApp.</p>
+          <ul class="checklist">
+            <li>Primera reunión de 30 minutos</li>
+            <li>En obra, en tu oficina o por videollamada</li>
+            <li>De lunes a sábado, mañana o tarde</li>
+            <li>Si tenés planos, traelos: AutoCAD, Revit o PDF</li>
+          </ul>
+          <p class="booking-alt" data-calendar hidden>¿Preferís elegir el horario vos? <a href="#" data-calendar-link target="_blank" rel="noopener">Ver mi agenda online →</a></p>
+        </div>
+
+        <div class="form-card" data-reveal>
+          <form id="booking-form" novalidate>
+            <div class="grid-2">
+              <div class="field">
+                <label for="nombre">Nombre y apellido</label>
+                <input id="nombre" name="nombre" type="text" autocomplete="name" required placeholder="Tu nombre">
+              </div>
+              <div class="field">
+                <label for="empresa">Empresa o estudio <span class="optional">(opcional)</span></label>
+                <input id="empresa" name="empresa" type="text" autocomplete="organization" placeholder="Nombre de la empresa">
+              </div>
+            </div>
+
+            <fieldset class="field">
+              <legend>¿Quién sos?</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="perfil" value="Arquitecto/a" required><span>Arquitecto/a</span></label>
+                <label class="chip"><input type="radio" name="perfil" value="Empresario/a o desarrollador/a"><span>Empresario/a</span></label>
+                <label class="chip"><input type="radio" name="perfil" value="Contratista o jefe/a de obra"><span>Contratista / Jefe de obra</span></label>
+                <label class="chip"><input type="radio" name="perfil" value="Técnico/a o colega"><span>Técnico/a</span></label>
+                <label class="chip"><input type="radio" name="perfil" value="Particular"><span>Particular</span></label>
+              </div>
+            </fieldset>
+
+            <div class="grid-2">
+              <div class="field">
+                <label for="proyecto">Tipo de proyecto</label>
+                <select id="proyecto" name="proyecto" required>
+                  <option value="" selected disabled>Elegí una opción</option>
+                  <option>Edificio en construcción</option>
+                  <option>Vivienda desde cero</option>
+                  <option>Reforma o renovación</option>
+                  <option>Conexión a red de agua o cloaca</option>
+                  <option>Instalación de gas</option>
+                  <option>Red de incendio</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="zona">Zona de la obra <span class="optional">(opcional)</span></label>
+                <input id="zona" name="zona" type="text" placeholder="Barrio o ciudad">
+              </div>
+            </div>
+
+            <fieldset class="field">
+              <legend>¿Dónde nos reunimos?</legend>
+              <div class="segmented">
+                <label><input type="radio" name="modalidad" value="Visita a la obra" required><span>Visita a obra</span></label>
+                <label><input type="radio" name="modalidad" value="En tu oficina"><span>En tu oficina</span></label>
+                <label><input type="radio" name="modalidad" value="Videollamada"><span>Videollamada</span></label>
+              </div>
+            </fieldset>
+
+            <div class="grid-2">
+              <div class="field">
+                <label for="fecha">Fecha preferida</label>
+                <input id="fecha" name="fecha" type="date" required>
+              </div>
+              <fieldset class="field">
+                <legend>Horario</legend>
+                <div class="segmented">
+                  <label><input type="radio" name="franja" value="por la mañana" required><span>Mañana</span></label>
+                  <label><input type="radio" name="franja" value="por la tarde"><span>Tarde</span></label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="field">
+              <label for="mensaje">Contame un poco más <span class="optional">(opcional)</span></label>
+              <textarea id="mensaje" name="mensaje" rows="3" placeholder="Metros, etapa de la obra, plazos…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Solicitar reunión por WhatsApp <span class="arrow" aria-hidden="true">→</span>
+            </button>
+            <p class="form-note">Se abre WhatsApp con tu solicitud lista para enviar. Te confirmo el horario personalmente.</p>
+          </form>
+
+          <div class="form-success" id="booking-success" hidden tabindex="-1">
+            <span class="success-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5 10 17.5 19 7"/></svg></span>
+            <h3>Listo, tu solicitud está preparada.</h3>
+            <p>Se abrió WhatsApp con tu pedido de reunión. Enviá el mensaje y te confirmo el horario personalmente.</p>
+            <div class="success-actions">
+              <a class="btn btn-primary" href="#" data-success-link target="_blank" rel="noopener">Abrir WhatsApp de nuevo</a>
+              <button type="button" class="btn btn-ghost" data-edit>Editar solicitud</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand">
+          <img class="brand-logo" src="assets/logo-alejandro-jugo.png" width="866" height="238" alt="Alejandro Jugo Instalaciones, volver arriba">
+        </a>
+        <p class="brand-tagline">+15 años construyendo <strong>instalaciones eficientes y seguras</strong></p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#agendar">Agendar reunión</a></li>
+        <li><a href="#agendar" data-whatsapp>WhatsApp</a></li>
+        <li data-email hidden><a href="#" data-email-link>Email</a></li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Alejandro Jugo Instalaciones</span>
+      <span>Hecho para durar.</span>
+    </div>
+  </footer>
+</body>
+</html>
